@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Error from './Pages/Error';
-import CocktailDetailPage from './Pages/CocktailDetailPage';
+
+import Cocktail from './Pages/Cocktail';
 import Navbar from './Components/Navbar';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
           <About />
         </Route>
         <Route exact path='/cocktail/:id'>
-          <CocktailDetailPage />
+          <Cocktail />
         </Route>
         <Route path='*'>
           <Error />
