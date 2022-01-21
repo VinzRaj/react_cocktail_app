@@ -1,10 +1,19 @@
 import React from 'react';
 
-const SingleCocktail = () => {
+export const SingleCocktail = ({ id, name, image, category, info, glass }) => {
   return (
-    <div>
-      <h2> SingleCocktail component</h2>
-    </div>
+    <article key={id} className='menu-item'>
+      <img src={image} alt={name} className='photo' />
+      <div className='item-info'>
+        <header>
+          <h4>{name}</h4>
+          <h4 className='Category'>${category}</h4>
+        </header>
+
+        <p className='item-text'>{info}</p>
+        <p className='item-text'>{glass}</p>
+        <p className='item-text'>{category}</p>
+      </div>
+    </article>
   );
 };
-export default SingleCocktail;

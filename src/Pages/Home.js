@@ -1,11 +1,8 @@
 import React from 'react';
+import { CocktailList } from '../Components/CocktailList';
 
 const Home = () => {
-  return (
-    <div>
-      <h2>home page</h2>
-    </div>
-  );
+  return <CocktailList />;
 };
 
 export default Home;
