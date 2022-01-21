@@ -50,7 +50,7 @@ const AppProvider = ({ children }) => {
   //fetch data on the dom loading
   useEffect(() => {
     fetchCocktails();
-  }, []);
+  }, [searchTerm]);
 
   return (
     <AppContext.Provider
