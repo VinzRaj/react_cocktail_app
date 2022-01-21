@@ -20,8 +20,10 @@ Variables
   --mainBorderRadius: 0.25rem;
   --smallWidth: 85vw;
   --maxWidth: 40rem;
+  --max-width: 1170px;
   --fullWidth: 1170px;
   --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
   --clr-gold: #c59d5f;
@@ -165,22 +167,30 @@ Cocktails List
   gap: 3rem 2rem;
   justify-items: center;
 }
-.menu-item {
-  display: grid;
+/* .menu-item {
   gap: 1rem 2rem;
   max-width: 25rem;
+} */
+.menu-item {
+  display: grid;
+  grid-template-columns: 225px 1fr;
+  gap: 0 1.25rem;
+  width: 40rem;
+  background-color: #c59d5f;
 }
 .photo {
   object-fit: cover;
   height: 200px;
   width: 100%;
   border: 0.25rem solid var(--clr-gold);
-  border-radius: var(--radius);
+  border-radius: var(--mainBorderRadius);
   display: block;
 }
 .item-info header {
   display: flex;
-  justify-content: space-between;
+  gap: 0 7rem;
+  /* justify-content: space-between; */
+
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
 .item-info h4 {
@@ -194,22 +204,9 @@ Cocktails List
   padding-top: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-item {
-    grid-template-columns: 225px 1fr;
-    gap: 0 1.25rem;
-    max-width: 40rem;
-  }
-  .photo {
-    height: 175px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
-  }
-  .photo {
-    height: 150px;
   }
 }
