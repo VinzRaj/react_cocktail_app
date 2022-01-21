@@ -1,9 +1,7 @@
 function App() {
   return (
-    <div className='App'>
-      <header className=''>
-        <p></p>
-      </header>
+    <div>
+      <h2>app component</h2>
     </div>
   );
 }
