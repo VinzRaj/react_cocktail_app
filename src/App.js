@@ -5,10 +5,12 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Error from './Pages/Error';
 import CocktailDetailPage from './Pages/CocktailDetailPage';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path='/'>
           <Home />
