@@ -16,11 +16,10 @@ const Search = () => {
     e.preventDefault();
   }
   return (
-    <section className='section search'>
-      <form className='search-form' onSubmit={handleSubmit}>
+    <section className='search'>
+      <form onSubmit={handleSubmit}>
         <div className='form-control'>
           <input
-            type='text'
             name='name'
             id='name'
             placeholder='search your favorite cocktail'
