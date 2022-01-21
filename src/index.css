@@ -14,7 +14,7 @@ Variables
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.3rem;
+  --mainSpacing: 0.1rem;
   --lightShadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.8);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
@@ -176,7 +176,7 @@ Cocktails List
   grid-template-columns: 225px 1fr;
   gap: 0 1.25rem;
   width: 40rem;
-  background-color: #c59d5f;
+  /* background-color: #c59d5f; */
 }
 .photo {
   object-fit: cover;
@@ -190,7 +190,6 @@ Cocktails List
   display: flex;
   gap: 0 7rem;
   /* justify-content: space-between; */
-
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
 .item-info h4 {
@@ -209,4 +208,25 @@ Cocktails List
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.btn-details {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  background: var(--clr-gold);
+  border-color: var(--clr-gold);
+  color: var(--clr-grey-10);
+  /* border: 2px solid var(--clr-gold); */
+  padding: 0.45rem 0.8rem;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  font-size: 1 rem;
+  border-radius: var(--mainBorderRadius);
+  display: inline-block;
+}
+
+.btn-details:hover {
+  background: var(--clr-grey-1);
+  color: var(--clr-gold);
 }

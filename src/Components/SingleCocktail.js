@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const SingleCocktail = ({ id, name, image, category, info, glass }) => {
   return (
@@ -13,6 +14,10 @@ export const SingleCocktail = ({ id, name, image, category, info, glass }) => {
         <p className='item-text'>{info}</p>
         <p className='item-text'>{glass}</p>
         <p className='item-text'>{category}</p>
+
+        <Link to={`/cocktail/${id}`} className=' btn-details'>
+          details
+        </Link>
       </div>
     </article>
   );
