@@ -9,6 +9,7 @@ Variables
   --clr-Primary-dark: #9e7e4c;
   --clr-Primary-light: #e8d8bf;
   --clr-primary-grade-1: #f3ebdf;
+  --clr-primary-grade-2: #f7e3c5;
 
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-5: hsl(210, 22%, 49%);
@@ -108,7 +109,7 @@ Navbar
   display: inline-block;
   font-weight: bold;
   margin-right: 0.5rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 2px;
   font-size: 1.2rem;
   padding: 0.25rem 0.5rem;
@@ -119,6 +120,7 @@ Navbar
 }
 .logo {
   color: var(--clr-Primary);
+  font-size: 1.6rem;
 }
 
 /* 
@@ -241,11 +243,10 @@ Cocktails List
   margin-left: 3rem;
 }
 /* 
-====== 
+========== 
 Cocktail
-======
+==========
 */
-
 .drink {
   width: var(--smallWidth);
   max-width: var(--fullWidth);
@@ -256,7 +257,6 @@ Cocktail
   background-color: var(--clr-primary-grade-1);
   padding-bottom: 2rem;
 }
-
 .drink p {
   font-weight: bold;
   text-transform: capitalize;
@@ -274,7 +274,7 @@ Cocktail
   margin-right: 0.5rem;
 }
 .drink-data {
-  background: #f7e3c5;
+  background: var(--clr-primary-grade-2);
   padding: 0.25rem 0.5rem;
   border-radius: var(--mainBorderRadius);
   color: var(--primaryColor);
@@ -295,7 +295,6 @@ Cocktail
     padding-top: 0;
     margin-left: 0;
   }
-
   .drink img {
     border-top-left-radius: var(--mainBorderRadius);
     border-bottom-left-radius: var(--mainBorderRadius);
