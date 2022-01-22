@@ -272,8 +272,9 @@ Form
   background: transparent;
   padding: 2rem 2.5rem;
 }
-input[type='text']:focus {
-  border: 2px solid #862d59;
+
+input:focus {
+  outline: none;
 }
 input {
   width: 100%;
