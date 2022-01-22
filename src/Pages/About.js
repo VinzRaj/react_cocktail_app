@@ -5,11 +5,12 @@ const About = () => {
     <section className='section about-section'>
       <h1 className='section-title'>about us</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-        repudiandae architecto qui adipisci in officiis, aperiam sequi atque
-        perferendis eos, autem maiores nisi saepe quisquam hic odio consectetur
-        nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione
-        hic aspernatur error blanditiis?
+        Cocktails Corner is a Single Page Application, where you can search for
+        your favorite cocktail. Based on your search, this Application lists all
+        the cocktails available in the market with a short description. If you
+        want know more details about your cocktail(eg: Ingredients,Alcholic or
+        Non Alcoholic),this application also provides the detailed view by
+        simply clicking details button attached to the each cocktail.
       </p>
     </section>
   );
