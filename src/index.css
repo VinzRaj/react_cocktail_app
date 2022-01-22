@@ -253,6 +253,10 @@ Cocktail Details
   border-top-right-radius: var(--mainBorderRadius);
   border-bottom-right-radius: 0px;
 }
+.drink-info {
+  padding-top: 2rem;
+  margin-left: 2rem;
+}
 table {
   border-collapse: collapse;
   margin-right: 2rem;
@@ -271,10 +275,7 @@ td {
   text-align: left;
   word-wrap: break-word;
 }
-.drink-info {
-  padding-top: 2rem;
-  margin-left: 2rem;
-}
+
 @media screen and (min-width: 992px) {
   .drink {
     display: grid;

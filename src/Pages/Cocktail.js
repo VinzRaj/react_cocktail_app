@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Loading } from '../Components/Loading';
+import { CocktailInfoTable } from '../Components/CocktailInfoTable';
 
 const Cocktail = () => {
   const { id } = useParams();
@@ -63,8 +64,7 @@ const Cocktail = () => {
   if (!cocktail) {
     return <h2 className='section-title'>no cocktails to display</h2>;
   } else {
-    const { name, image, category, info, glass, instructions, ingredients } =
-      cocktail;
+    const { name, image } = cocktail;
     return (
       <section className='section'>
         <Link to='/' className='btn-primary btn-cocktail-detail'>
@@ -74,38 +74,7 @@ const Cocktail = () => {
         <div className='drink'>
           <img src={image} alt={name}></img>
           <div className='drink-info'>
-            <table>
-              <tbody>
-                <tr>
-                  <th>Drink</th>
-                  <td>{name}</td>
-                </tr>
-                <tr>
-                  <th>Category</th>
-                  <td>{category}</td>
-                </tr>
-                <tr>
-                  <th>Information</th>
-                  <td>{info}</td>
-                </tr>
-                <tr>
-                  <th>Glass</th>
-                  <td>{glass}</td>
-                </tr>
-                <tr>
-                  <th>Instruction</th>
-                  <td>{instructions}</td>
-                </tr>
-                <tr>
-                  <th>Ingredients</th>
-                  <td>
-                    {ingredients.map((item, index) => {
-                      return item ? <span key={index}> {item}</span> : null;
-                    })}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <CocktailInfoTable cocktail={cocktail} />
           </div>
         </div>
       </section>
