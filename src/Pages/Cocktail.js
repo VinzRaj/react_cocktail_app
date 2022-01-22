@@ -11,6 +11,10 @@ const Cocktail = () => {
 
   React.useEffect(() => {
     setLoading(true);
+    /*
+     * Thisfunction used to make fetch
+     * cocktail details  by making API call
+     */
     async function getCocktail() {
       const url = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`;
       try {
