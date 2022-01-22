@@ -74,27 +74,38 @@ const Cocktail = () => {
         <div className='drink'>
           <img src={image} alt={name}></img>
           <div className='drink-info'>
-            <p>
-              <span className='drink-data'>name :</span> {name}
-            </p>
-            <p>
-              <span className='drink-data'>category :</span> {category}
-            </p>
-            <p>
-              <span className='drink-data'>info :</span> {info}
-            </p>
-            <p>
-              <span className='drink-data'>glass :</span> {glass}
-            </p>
-            <p>
-              <span className='drink-data'>instructons :</span> {instructions}
-            </p>
-            <p>
-              <span className='drink-data'>ingredients :</span>
-              {ingredients.map((item, index) => {
-                return item ? <span key={index}> {item}</span> : null;
-              })}
-            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Drink</th>
+                  <td>{name}</td>
+                </tr>
+                <tr>
+                  <th>Category</th>
+                  <td>{category}</td>
+                </tr>
+                <tr>
+                  <th>Information</th>
+                  <td>{info}</td>
+                </tr>
+                <tr>
+                  <th>Glass</th>
+                  <td>{glass}</td>
+                </tr>
+                <tr>
+                  <th>Instruction</th>
+                  <td>{instructions}</td>
+                </tr>
+                <tr>
+                  <th>Ingredients</th>
+                  <td>
+                    {ingredients.map((item, index) => {
+                      return item ? <span key={index}> {item}</span> : null;
+                    })}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

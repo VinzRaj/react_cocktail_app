@@ -236,7 +236,7 @@ Cocktail Details
 ===================
 */
 .drink {
-  width: var(--smallWidth);
+  /* width: var(--smallWidth); */
   max-width: var(--fullWidth);
   margin: 0 auto;
   text-align: left;
@@ -245,11 +245,7 @@ Cocktail Details
   background-color: var(--clr-primary-grade-1);
   padding-bottom: 2rem;
 }
-.drink p {
-  font-weight: bold;
-  text-transform: capitalize;
-  line-height: 1.8;
-}
+
 .drink img {
   border-radius: var(--mainBorderRadius);
   border-top-left-radius: var(--mainBorderRadius);
@@ -257,14 +253,23 @@ Cocktail Details
   border-top-right-radius: var(--mainBorderRadius);
   border-bottom-right-radius: 0px;
 }
-.drink span {
-  margin-right: 0.5rem;
+table {
+  border-collapse: collapse;
+  margin-right: 2rem;
 }
-.drink-data {
-  background: var(--clr-primary-grade-2);
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--mainBorderRadius);
-  color: var(--primaryColor);
+tr {
+  border-bottom: 1pt solid var(--clr-Primary-light);
+  height: 3rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+th {
+  width: 10rem;
+  text-align: left;
+}
+td {
+  text-align: left;
+  word-wrap: break-word;
 }
 .drink-info {
   padding-top: 2rem;
