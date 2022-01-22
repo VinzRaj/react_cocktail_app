@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const SingleCocktail = ({ id, name, image, category, info, glass }) => {
   return (
-    <article key={id} className='menu-item'>
+    <article key={id} className='cocktail-item'>
       <img src={image} alt={name} className='photo' />
       <div className='item-info'>
         <header>
