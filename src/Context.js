@@ -13,7 +13,7 @@ const AppProvider = ({ children }) => {
       //calling cocktail API to fetch data
       const response = await fetch(`${url}${searchTerm}`);
       const result = await response.json();
-      console.log(result);
+
       const { drinks } = result;
       if (drinks) {
         //Filter necessary data

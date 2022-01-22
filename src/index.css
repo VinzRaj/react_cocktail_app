@@ -35,9 +35,9 @@ Variables
   --spacing: 0.1rem;
 }
 /* 
-====== 
+============== 
 Global Styles 
-======
+=============
 */
 * {
   margin: 0;
@@ -124,10 +124,34 @@ Navbar
 }
 
 /* 
+========== 
+Form
+==========
+*/
+.search {
+  margin: 0 auto;
+  width: 90vw;
+  max-width: var(--maxWidth);
+  margin-top: 1rem;
+  background: transparent;
+  padding: 2rem 2.5rem;
+}
+input:focus {
+  outline: none;
+}
+input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  background: var(--mainWhite);
+  border-radius: var(--mainBorderRadius);
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+/* 
 =============== 
 Cocktails List 
 ================*/
-
 .section {
   width: 90vw;
   margin: 0 auto;
@@ -259,36 +283,10 @@ Cocktail Details
     border-bottom-right-radius: 0px;
   }
 }
-/* 
-========== 
-Form
-==========
-*/
-.search {
-  margin: 0 auto;
-  width: 90vw;
-  max-width: var(--maxWidth);
-  margin-top: 1rem;
-  background: transparent;
-  padding: 2rem 2.5rem;
-}
 
-input:focus {
-  outline: none;
-}
-input {
-  width: 100%;
-  height: 3rem;
-  border: none;
-  background: var(--mainWhite);
-  border-radius: var(--mainBorderRadius);
-  padding: 0.5rem;
-  font-size: 1.1rem;
-}
-
-/*====== 
-About
-======
+/*======== 
+ About
+========
 */
 .about-section {
   width: var(--smallWidth);
