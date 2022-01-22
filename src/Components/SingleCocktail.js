@@ -14,7 +14,7 @@ export const SingleCocktail = ({ id, name, image, category, info, glass }) => {
         <p className='item-text'>{glass}</p>
         <p className='item-text'>{category}</p>
 
-        <Link to={`/cocktail/${id}`} className=' btn-details'>
+        <Link to={`/cocktail/${id}`} className='btn-primary'>
           details
         </Link>
       </div>
