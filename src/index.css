@@ -4,15 +4,23 @@ Variables
 ======
 */
 :root {
-  --primaryLightColor: #d4e6a5;
-  --primaryDarkColor: #f1e186;
+  /* Major color theme selected for this project */
+  --clr-Primary: #c59d5f;
+  --clr-Primary-dark: #9e7e4c;
+  --clr-Primary-light: #e8d8bf;
+
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
+
   --mainBackground: #f1f5f8;
-  --mainOverlay: rgba(35, 10, 36, 0.4);
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
+
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.1rem;
   --lightShadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.8);
@@ -22,11 +30,6 @@ Variables
   --maxWidth: 40rem;
   --max-width: 1170px;
   --fullWidth: 1170px;
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-gold: #c59d5f;
   --spacing: 0.1rem;
 }
 /* 
@@ -67,7 +70,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--clr-gold);
+  color: var(--clr-Primary);
 }
 img {
   width: 100%;
@@ -84,7 +87,7 @@ Navbar
   height: 5rem;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--clr-gold);
+  border-bottom: 1px solid var(--clr-Primary);
   box-shadow: var(--lightShadow);
 }
 .nav-center {
@@ -114,7 +117,7 @@ Navbar
   color: var(--clr-grey-1);
 }
 .logo {
-  color: var(--clr-gold);
+  color: var(--clr-Primary);
 }
 
 /* 
@@ -148,25 +151,35 @@ Cocktails List
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
   }
 } */
-.section {
+/* .section {
   width: 90vw;
   margin: 0 auto;
-  max-width: var(--max-width);
-}
+  /* max-width: var(--max-width); */
+/* background-color: var(--primaryDarkColor);
+} */
 
-@media screen and (min-width: 992px) {
-  .section {
-    width: 95vw;
-  }
+.cocktail-section {
+  width: 90vw;
+  margin: 0 auto;
+  /* max-width: var(--max-width); */
+  padding: 3rem 0;
+  border-radius: var(--mainBorderRadius);
+  box-shadow: var(--lightShadow);
 }
 .section-center {
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
-  max-width: 1170px;
   display: grid;
   gap: 3rem 2rem;
   justify-items: center;
 }
+
+@media screen and (min-width: 992px) {
+  /* .section {
+    width: 95vw;
+  } */
+}
+
 /* .menu-item {
   gap: 1rem 2rem;
   max-width: 25rem;
@@ -175,28 +188,26 @@ Cocktails List
   display: grid;
   grid-template-columns: 225px 1fr;
   gap: 0 1.25rem;
-  width: 40rem;
-  /* background-color: #c59d5f; */
+  width: 30rem;
 }
 .photo {
   object-fit: cover;
   height: 200px;
   width: 100%;
-  border: 0.25rem solid var(--clr-gold);
+  border: 2px solid var(--clr-Primary-dark);
   border-radius: var(--mainBorderRadius);
+  box-shadow: var(--lightShadow);
+
   display: block;
 }
 .item-info header {
-  display: flex;
-  gap: 0 7rem;
-  /* justify-content: space-between; */
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
 .item-info h4 {
   margin-bottom: 0.5rem;
 }
 .price {
-  color: var(--clr-gold);
+  color: var(--clr-Primary);
 }
 .item-text {
   margin-bottom: 0;
@@ -205,7 +216,6 @@ Cocktails List
 
 @media screen and (min-width: 1200px) {
   .section-center {
-    width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -214,8 +224,8 @@ Cocktails List
   margin-top: 1rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  background: var(--clr-gold);
-  border-color: var(--clr-gold);
+  background: var(--clr-Primary);
+  border-color: var(--clr-Primary);
   color: var(--clr-grey-10);
   /* border: 2px solid var(--clr-gold); */
   padding: 0.45rem 0.8rem;
@@ -228,7 +238,7 @@ Cocktails List
 
 .btn-details:hover {
   background: var(--clr-grey-1);
-  color: var(--clr-gold);
+  color: var(--clr-Primary);
 }
 /* 
 ====== 
@@ -236,9 +246,6 @@ Cocktail
 ======
 */
 
-.cocktail-section {
-  text-align: center;
-}
 .drink {
   width: var(--smallWidth);
   max-width: var(--fullWidth);
@@ -309,13 +316,12 @@ Form
 
 .form-control input {
   width: 100%;
-  height: 12vh;
+  height: 8vh;
   border: none;
   background: var(--mainWhite);
   border-radius: var(--mainBorderRadius);
   padding: 0.5rem;
   font-size: 1.1rem;
-  box-shadow: var(--lightShadow);
 }
 #name input[type='text']:focus {
   outline: none;

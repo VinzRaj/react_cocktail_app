@@ -19,8 +19,7 @@ export const CocktailList = () => {
     );
   }
   return (
-    <section className='section'>
-      <h2 className='section-title'>cocktails</h2>
+    <section className='cocktail-section'>
       <div className='section-center'>
         {cocktails.map((item) => {
           return <SingleCocktail key={item.id} {...item} />;
