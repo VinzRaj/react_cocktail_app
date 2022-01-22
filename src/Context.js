@@ -8,8 +8,8 @@ const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState('a');
   const [cocktails, setCocktails] = useState([]);
 
-  //fetch data on the dom loading
   useEffect(() => {
+    //fetch data on the dom loading
     const fetchCocktails = async () => {
       setIsLoading(true);
       try {
@@ -37,10 +37,10 @@ const AppProvider = ({ children }) => {
               glass: strGlass,
             };
           });
-          //set Array with necssary information
+          //set Array with necssary informations
           setCocktails(cocktaildata);
         } else {
-          //if the result is empty set cocktails with empty array
+          //if the result is empty, set cocktails with an empty array
           setCocktails([]);
         }
         setIsLoading(false);

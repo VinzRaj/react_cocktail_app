@@ -15,8 +15,6 @@ const Cocktail = () => {
       try {
         const response = await fetch(url);
         const result = await response.json();
-        console.log(result);
-
         if (result.drinks) {
           const {
             strDrink: name,
@@ -63,7 +61,7 @@ const Cocktail = () => {
     return <Loading />;
   }
   if (!cocktail) {
-    return <h2 className='section-title'>no cocktail to display</h2>;
+    return <h2 className='section-title'>no cocktails to display</h2>;
   } else {
     const { name, image, category, info, glass, instructions, ingredients } =
       cocktail;
