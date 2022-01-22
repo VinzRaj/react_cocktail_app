@@ -22,7 +22,7 @@ const Search = () => {
           <input
             name='name'
             id='name'
-            placeholder='search your favorite cocktail'
+            placeholder='Search your favorite Cocktail'
             ref={searchValue}
             onChange={searchCocktail}
           />

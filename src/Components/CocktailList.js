@@ -5,18 +5,19 @@ import { useGlobalContext } from '../Context';
 
 export const CocktailList = () => {
   const { Isloading, cocktails } = useGlobalContext();
+  console.log(cocktails);
 
   if (Isloading) {
     return <Loading />;
   }
 
-  // if (cocktails.length < 1) {
-  //   return (
-  //     <h2 className='section-title'>
-  //       no cocktails matched your search criteria
-  //     </h2>
-  //   );
-  // }
+  if (cocktails.length < 1) {
+    return (
+      <h2 className='section-title'>
+        no cocktails matched your search criteria
+      </h2>
+    );
+  }
   return (
     <section className='section cocktail-section'>
       <div className='section-center'>
