@@ -162,7 +162,7 @@ Cocktails List
   box-shadow: var(--lightShadow);
 }
 .section-center {
-  width: 80vw;
+  padding-left: 10px;
   margin: 0 auto;
   display: grid;
   gap: 3rem 2rem;
@@ -179,10 +179,16 @@ Single Cocktail
 ================*/
 .cocktail-item {
   display: grid;
-  grid-template-columns: 225px 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0 1.25rem;
-  width: var(--maxWidth);
 }
+@media screen and (min-width: 992px) {
+  .cocktail-item {
+    width: var(--maxWidth);
+    grid-template-columns: 225px 1fr;
+  }
+}
+
 .photo {
   object-fit: cover;
   height: 200px;
