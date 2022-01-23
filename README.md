@@ -1,7 +1,8 @@
 # Cocktail Corner
 
-
-This is a SPA for listing cocktails.
+Cocktails Corner is a Single Page Application, where you can search your favorite cocktail.
+Based on the search, this application will list all the cocktails available in the market with a short description.
+The details button navigates you to the page where you can learn more about your cocktail.(eg: Ingredients,Category,Instructions etc.)
 
 ## Available Scripts
 
