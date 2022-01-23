@@ -9,11 +9,9 @@ export const SingleCocktail = ({ id, name, image, category, info, glass }) => {
         <header>
           <h4>{name}</h4>
         </header>
-
-        <p className='item-text'> {info}</p>
-        <p className='item-text'>{glass}</p>
-        <p className='item-text'>{category}</p>
-
+        <p> {info}</p>
+        <p>{glass}</p>
+        <p>{category}</p>
         <Link to={`/cocktail/${id}`} className='btn-primary'>
           details
         </Link>

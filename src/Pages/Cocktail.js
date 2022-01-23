@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Loading } from '../Components/Loading';
 import { CocktailInfoTable } from '../Components/CocktailInfoTable';
@@ -9,11 +9,11 @@ const Cocktail = () => {
   const [loading, setLoading] = useState(false);
   const [cocktail, setCocktail] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setLoading(true);
     /*
-     * Thisfunction used to make fetch
-     * cocktail details  by making API call
+     * This function used to make fetch
+     * cocktail details by making API call
      */
     async function getCocktail() {
       const url = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`;

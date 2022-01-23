@@ -4,7 +4,9 @@ import Search from '../Components/Search';
 import { useGlobalContext } from '../Context.js';
 
 const Home = () => {
-  /*If you want to clear the search result, include this code*/
+  /*
+   * set search term as 'a' for clearing the search *   results
+   */
   const { setSearchTerm } = useGlobalContext();
   React.useEffect(() => {
     setSearchTerm('a');

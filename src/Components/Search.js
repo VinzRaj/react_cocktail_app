@@ -5,10 +5,6 @@ const Search = () => {
   const { setSearchTerm } = useGlobalContext();
   const searchValue = React.useRef('');
 
-  React.useEffect(() => {
-    // searchValue.current.focus();
-  }, []);
-
   function searchCocktail() {
     setSearchTerm(searchValue.current.value);
   }
