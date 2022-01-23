@@ -1,7 +1,7 @@
 import React from 'react';
-import { CocktailList } from '../Components/CocktailList/CocktailList';
-import Search from '../Components/Search/Search';
-import { useGlobalContext } from '../Context.js';
+import { CocktailList } from '../../Components/CocktailList/CocktailList';
+import Search from '../../Components/Search/Search';
+import { useGlobalContext } from '../../Context.js';
 
 const Home = () => {
   /*
