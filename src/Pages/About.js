@@ -9,8 +9,7 @@ const About = () => {
         favorite cocktail. Based on the search, this application will list all
         the cocktails available in the market with a short description. The
         details button navigates you to the page where you can learn more about
-        your cocktail.(eg: Ingredients,Alcholic or Non Alcoholic,Instructions
-        etc.)
+        your cocktail.(eg: Ingredients,Category,Instructions etc.)
       </p>
     </section>
   );

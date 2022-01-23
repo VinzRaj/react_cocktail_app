@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Error from './Pages/Error';
 import Cocktail from './Pages/Cocktail';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (

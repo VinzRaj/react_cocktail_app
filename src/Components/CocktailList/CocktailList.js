@@ -1,12 +1,11 @@
 import React from 'react';
-import { Loading } from '../Components/Loading';
-import { SingleCocktail } from '../Components/SingleCocktail';
-import { useGlobalContext } from '../Context';
+import { Loading } from '../Loading/Loading';
+import { SingleCocktail } from '../SingleCocktail/SingleCocktail';
+import { useGlobalContext } from '../../Context';
+import './CocktailList.css';
 
 export const CocktailList = () => {
   const { Isloading, cocktails } = useGlobalContext();
-  console.log(cocktails);
-
   if (Isloading) {
     return <Loading />;
   }

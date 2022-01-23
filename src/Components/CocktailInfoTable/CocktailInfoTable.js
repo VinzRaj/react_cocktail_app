@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './CocktailInfoTable.css';
 export const CocktailInfoTable = ({ cocktail }) => {
   const { name, category, info, glass, instructions, ingredients } = cocktail;
   return (

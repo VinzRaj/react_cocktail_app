@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Loading } from '../Components/Loading';
-import { CocktailInfoTable } from '../Components/CocktailInfoTable';
+import { Loading } from '../Components/Loading/Loading';
+import { CocktailInfoTable } from '../Components/CocktailInfoTable/CocktailInfoTable';
 
 const Cocktail = () => {
   const { id } = useParams();

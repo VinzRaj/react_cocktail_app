@@ -1,10 +1,10 @@
 import React from 'react';
-import { useGlobalContext } from '../Context.js';
+import { useGlobalContext } from '../../Context.js';
+import './Search.css';
 
 const Search = () => {
-  const { setSearchTerm } = useGlobalContext();
+  let { setSearchTerm } = useGlobalContext();
   const searchValue = React.useRef('');
-
   function searchCocktail() {
     setSearchTerm(searchValue.current.value);
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './SingleCocktail.css';
 
 export const SingleCocktail = ({ id, name, image, category, info, glass }) => {
   return (

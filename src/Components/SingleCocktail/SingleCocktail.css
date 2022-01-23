@@ -1,0 +1,36 @@
+/* 
+=============== 
+Single Cocktail  
+================*/
+.cocktail-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.25rem;
+}
+@media screen and (min-width: 992px) {
+  .cocktail-item {
+    width: var(--maxWidth);
+    grid-template-columns: 225px 1fr;
+  }
+}
+
+.photo {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border: 2px solid var(--clr-Primary-dark);
+  border-radius: var(--mainBorderRadius);
+  box-shadow: var(--lightShadow);
+  display: block;
+}
+.item-info header {
+  width: 70%;
+  border-bottom: 0.5px dotted var(--clr-grey-5);
+}
+.item-info h4 {
+  margin-bottom: 0.5rem;
+}
+.item-info p {
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
